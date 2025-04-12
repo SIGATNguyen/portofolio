@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>portoflio</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Nguyen | Géo·Designer</title>
+    <meta name="description" content="Portfolio de Kevin Nguyen, designer numérique interactif spécialisé en dataviz, cartographie web et expérience utilisateur.">
+    
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <!-- Curseur personnalisé -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Couche de transition entre pages -->
+    <div class="page-transition"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">K<span>N</span></a>
+        <nav class="nav">
+            <a href="#home" class="nav-link active">Accueil</a>
+            <a href="#projects" class="nav-link">Projets</a>
+            <a href="#about" class="nav-link">À propos</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Grille de fond -->
+        <div class="grid-background"></div>
+        
+        <!-- Coordonnées décoratives -->
+        <div class="coordinates top-left">X: 44.8378° N</div>
+        <div class="coordinates top-right">Y: 0.5792° W</div>
+        <div class="coordinates bottom-left">Z: 2023-2025</div>
+        <div class="coordinates bottom-right">GRID REF: KN-0723</div>
+        
+        <!-- Points de données décoratifs -->
+        <div class="data-point" style="top: 30%; left: 80%;"></div>
+        <div class="data-line" style="top: 30%; left: 80%; width: 100px; transform: rotate(45deg);"></div>
+        
+        <div class="data-point" style="top: 70%; left: 30%;"></div>
+        <div class="data-line" style="top: 70%; left: 30%; width: 150px; transform: rotate(-30deg);"></div>
+        
+        <div class="data-point" style="top: 20%; left: 40%;"></div>
+        <div class="data-line" style="top: 20%; left: 40%; width: 120px; transform: rotate(10deg);"></div>
+        
+        <div class="data-point" style="top: 60%; left: 70%;"></div>
+        <div class="data-line" style="top: 60%; left: 70%; width: 80px; transform: rotate(-60deg);"></div>
+        
+        <!-- Contenu principal -->
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-inner">KEVIN NGUYEN</span>
+                <span class="hero-title-inner"><span class="title-accent">GÉO</span>·DESIGNER</span>
+            </h1>
+            
+            <div class="hero-subtitle">
+                <span class="hero-subtitle-inner" class="mono">De l'analyse territoriale au design interactif</span>
+            </div>
+            
+            <p class="hero-text lead">À la croisée des données territoriales et de l'expérience utilisateur, je crée des interfaces interactives qui racontent des histoires à travers les données.</p>
+            
+            <a href="#projects" class="btn btn-primary">Découvrir mes projets</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="scroll-indicator-text">Scroll</span>
+            <span class="scroll-indicator-line"></span>
+        </div>
+    </section>
+    
+    <!-- Projets Section -->
+    <section id="projects" class="projects">
+        <div class="section-header animate-on-scroll" data-animation="fade-in">
+            <h2>Projets sélectionnés</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="filter-container animate-on-scroll" data-animation="fade-in">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="dataviz">Dataviz</button>
+            <button class="filter-btn" data-filter="cartography">Cartographie</button>
+            <button class="filter-btn" data-filter="ux">UX/UI</button>
+            <button class="filter-btn" data-filter="storytelling">Storytelling</button>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Projet LeBron James -->
+            <article class="project-card animate-on-scroll" data-animation="fade-in" data-category="dataviz">
+                <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="LeBron James Career Visualization" class="project-image">
+                <div class="project-overlay">
+                    <span class="project-category">Dataviz Interactive</span>
+                    <h3 class="project-title">LeBron James Career</h3>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <a href="#project-lebron" class="view-project">
+                        Voir le projet
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Projet GTFS Bordeaux -->
+            <article class="project-card animate-on-scroll" data-animation="fade-in" data-category="cartography">
+                <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/GTFS_Bdx_1.webp" alt="GTFS Bordeaux Cartography" class="project-image">
+                <div class="project-overlay">
+                    <span class="project-category">Cartographie Web</span>
+                    <h3 class="project-title">GTFS Bordeaux</h3>
+                    <div class="project-tags">
+                        <span class="tag">Mapbox</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GTFS</span>
+                    </div>
+                    <a href="#project-gtfs" class="view-project">
+                        Voir le projet
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Projet US Diabetes -->
+            <article class="project-card animate-on-scroll" data-animation="fade-in" data-category="dataviz cartography">
+                <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/US_DIabete_1.webp" alt="US Diabetes Visualization" class="project-image">
+                <div class="project-overlay">
+                    <span class="project-category">Cartographie & Dataviz</span>
+                    <h3 class="project-title">US Diabetes Map</h3>
+                    <div class="project-tags">
+                        <span class="tag">GIS</span>
+                        <span class="tag">Leaflet</span>
+                        <span class="tag">Analyse spatiale</span>
+                    </div>
+                    <a href="#project-diabetes" class="view-project">
+                        Voir le projet
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Projet Ouest-France -->
+            <article class="project-card animate-on-scroll" data-animation="fade-in" data-category="storytelling">
+                <img src="https://sigatnguyen.github.io/privatecarto/img/cover.jpg" alt="Scrollytelling Ouest-France" class="project-image">
+                <div class="project-overlay">
+                    <span class="project-category">Storytelling Interactif</span>
+                    <h3 class="project-title">Ouest-France Scrollytelling</h3>
+                    <div class="project-tags">
+                        <span class="tag">Scrollytelling</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Editorial</span>
+                    </div>
+                    <a href="#project-ouest-france" class="view-project">
+                        Voir le projet
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Projet supplémentaire (à venir) -->
+            <article class="project-card animate-on-scroll" data-animation="fade-in" data-category="ux">
+                <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="DataScape - Plateforme environnementale" class="project-image">
+                <div class="project-overlay">
+                    <span class="project-category">UX/UI Design</span>
+                    <h3 class="project-title">DataScape</h3>
+                    <div class="project-tags">
+                        <span class="tag">UX/UI</span>
+                        <span class="tag">Dashboard</span>
+                        <span class="tag">Environnement</span>
+                    </div>
+                    <a href="#project-datascape" class="view-project">
+                        Bientôt disponible
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Projet supplémentaire 2 (à venir) -->
+            <article class="project-card animate-on-scroll" data-animation="fade-in" data-category="ux storytelling">
+                <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/US_DIabete_1.webp" alt="Territoires Numériques" class="project-image">
+                <div class="project-overlay">
+                    <span class="project-category">Installation Interactive</span>
+                    <h3 class="project-title">Territoires Numériques</h3>
+                    <div class="project-tags">
+                        <span class="tag">Three.js</span>
+                        <span class="tag">Installation</span>
+                        <span class="tag">3D</span>
+                    </div>
+                    <a href="#project-territoires" class="view-project">
+                        En développement
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="grid-background"></div>
+        
+        <!-- Coordonnées décoratives -->
+        <div class="coordinates top-right">PROFILE: v2.5</div>
+        <div class="coordinates bottom-left">REF: #SIGAT-GOBELINS</div>
+        
+        <div class="section-header animate-on-scroll" data-animation="fade-in">
+            <h2>À propos</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="about-content">
+            <div class="animate-on-scroll" data-animation="slide-in-left">
+                <p class="lead">Bonjour, je suis Kevin Nguyen. Mon parcours m'a conduit de l'analyse territoriale au design numérique interactif.</p>
+                
+                <p>Titulaire d'un Master SIGAT en géomatique et analyse territoriale, j'ai développé une affinité particulière pour la visualisation de données et la cartographie interactive. Cette formation m'a donné une solide méthodologie d'analyse et une approche rigoureuse de la donnée.</p>
+                
+                <p>Aujourd'hui, je me dirige vers le design numérique interactif, la datavisualisation et l'UX/UI. Je m'intéresse particulièrement à la façon dont nous pouvons rendre des données complexes accessibles et engageantes à travers des interfaces narratives.</p>
+                
+                <p>Mon objectif est d'intégrer la formation "Expert en Création Numérique Interactive" de l'école Gobelins, pour approfondir cette fusion entre design, code et narration.</p>
+                
+                <div class="skills-container">
+                    <h3 class="skills-title">Compétences</h3>
+                    
+                    <div class="skills-grid">
+                        <div>
+                            <h4 class="skill-category">Design</h4>
+                            <ul class="skill-list">
+                                <li class="skill-item">Datavisualisation</li>
+                                <li class="skill-item">UX/UI Design</li>
+                                <li class="skill-item">Cartographie</li>
+                                <li class="skill-item">Storytelling visuel</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="skill-category">Développement</h4>
+                            <ul class="skill-list">
+                                <li class="skill-item">HTML/CSS/JavaScript</li>
+                                <li class="skill-item">D3.js</li>
+                                <li class="skill-item">Mapbox/Leaflet</li>
+                                <li class="skill-item">Responsive Design</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="skill-category">Analyse</h4>
+                            <ul class="skill-list">
+                                <li class="skill-item">Analyse spatiale</li>
+                                <li class="skill-item">SIG</li>
+                                <li class="skill-item">Analyse de données</li>
+                                <li class="skill-item">Recherche utilisateur</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="skill-category">Outils</h4>
+                            <ul class="skill-list">
+                                <li class="skill-item">Figma</li>
+                                <li class="skill-item">QGIS</li>
+                                <li class="skill-item">VS Code</li>
+                                <li class="skill-item">Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="animate-on-scroll" data-animation="slide-in-right">
+                <div class="about-image-container reveal-image">
+                    <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Kevin Nguyen" class="about-image">
+                    <div class="about-pattern"></div>
+                </div>
+                
+                <div class="journey">
+                    <h3>Mon parcours</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023</div>
+                            <h4 class="timeline-title">Master SIGAT - Université Rennes 2</h4>
+                            <p class="timeline-text">Formation en géomatique, analyse spatiale et cartographie. Apprentissage des méthodes d'analyse territoriale et des outils SIG.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024</div>
+                            <h4 class="timeline-title">Transition vers le design interactif</h4>
+                            <p class="timeline-text">Développement de projets personnels en datavisualisation et interfaces interactives. Approfondissement des techniques de design numérique.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2025</div>
+                            <h4 class="timeline-title">Préparation Gobelins</h4>
+                            <p class="timeline-text">Création d'un portfolio orienté design interactif et développement de projets pour la candidature à Gobelins.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2026 (Objectif)</div>
+                            <h4 class="timeline-title">Formation Gobelins</h4>
+                            <p class="timeline-text">Intégration de la formation "Expert en Création Numérique Interactive" pour développer une expertise en design et narration numérique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="grid-background"></div>
+        
+        <div class="section-header animate-on-scroll" data-animation="fade-in">
+            <h2>Contact</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="contact-container">
+            <div class="animate-on-scroll" data-animation="fade-in">
+                <p class="lead">Intéressé par mon travail ou une collaboration ? N'hésitez pas à me contacter !</p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+            
+            <div class="animate-on-scroll" data-animation="fade-in">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.4704 21.7893 20.9991 21.4142 21.3742C21.0391 21.7493 20.5104 21.96 19.96 21.96C16.4243 21.8004 13.0222 20.5506 10.13 18.39C7.4263 16.4035 5.25472 13.8549 3.83 10.89C1.64 7.94 0.380001 4.48 0.240001 0.89C0.239915 0.340231 0.450913 0.811658 0.824807 0.436071C1.1987 0.0604842 1.72521 -0.151459 2.275 -0.15H5.275C6.2532 -0.157635 7.10168 0.538325 7.27 1.5C7.38 2.175 7.54 2.83 7.75 3.465C7.93906 4.0587 7.87491 4.7162 7.58 5.265L6.345 7.765C7.66712 10.5606 9.79177 12.9495 12.44 14.615L14.94 13.38C15.4884 13.0851 16.1458 13.0208 16.7392 13.21C17.3741 13.42 17.9967 13.58 18.6292 13.69C19.6014 13.8614 20.3011 14.7168 20.29 15.71L22 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Téléphone</span>
+                            <span>+33 6 XX XX XX XX</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Email</span>
+                            <span>contact@kevinnguyen.fr</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Localisation</span>
+                            <span>Bordeaux, France</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.5C19.9988 8.30384 19.5325 7.15733 18.7 6.3C19.0905 5.26878 19.0545 4.12293 18.6 3.1C18.6 3.1 17.5 2.8 15.6 4C13.9356 3.55051 12.1644 3.55051 10.5 4C8.6 2.8 7.5 3.1 7.5 3.1C7.04549 4.12293 7.00951 5.26878 7.4 6.3C6.56745 7.15733 6.10125 8.30384 6.1 9.5C6.1 14.1 8.8 15.2 11.6 15.5C11 16.1 11 16.6 11.1 17.5V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="#" class="social-link" aria-label="Behance">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9H10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 15H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 15C14 12.7909 15.7909 11 18 11C20.2091 11 22 12.7909 22 15C22 17.2091 20.2091 19 18 19C15.7909 19 14 17.2091 14 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 6H21.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 9H21.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Kevin Nguyen - Tous droits réservés</p>
+        </div>
+    </footer>
+    
+    <!-- Pages détaillées de projets (masquées par défaut) -->
+    <!-- LeBron James Project -->
+    <div id="project-lebron" class="project-detail">
+        <div class="project-detail-container">
+            <div class="project-detail-header">
+                <div class="project-detail-cover">
+                    <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="LeBron James Visualization">
+                </div>
+                
+                <div class="project-detail-intro">
+                    <h2 class="project-detail-title">LeBron James Career</h2>
+                    <p class="project-detail-subtitle">Visualisation interactive des statistiques de carrière de l'un des plus grands joueurs de l'histoire de la NBA.</p>
+                    
+                    <div class="project-detail-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Année</span>
+                            <span class="meta-value">2023</span>
+                        </div>
+                        
+                        <div class="meta-item">
+                            <span class="meta-label">Durée</span>
+                            <span class="meta-value">5 semaines</span>
+                        </div>
+                        
+                        <div class="meta-item">
+                            <span class="meta-label">Rôle</span>
+                            <span class="meta-value">Design & Développement</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail-tags">
+                        <span class="tag">Dataviz</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-detail-content">
+                <section class="project-section">
+                    <h3 class="section-title">Aperçu du projet</h3>
+                    
+                    <div class="section-content">
+                        <div class="section-text">
+                            <p>Ce projet est né de ma passion pour le basketball et l'analyse de données. L'objectif était de créer une interface interactive permettant d'explorer les 20 ans de carrière de LeBron James à travers ses statistiques.</p>
+                            
+                            <p>Au-delà de la simple présentation de chiffres, j'ai voulu raconter une histoire : celle d'une ascension exceptionnelle, des changements d'équipes, des évolutions de style de jeu au fil des saisons.</p>
+                            
+                            <p>Le défi principal était de concevoir une expérience utilisateur permettant de naviguer intuitivement à travers une multitude de données, tout en gardant une cohérence visuelle et narrative.</p>
+                        </div>
+                        
+                        <div class="section-image">
+                            <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Interface principale de la visualisation LeBron James">
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="project-section">
+                    <h3 class="section-title">Processus de création</h3>
+                    
+                    <div class="process-grid">
+                        <div class="process-card">
+                            <h4 class="process-step">01. Recherche & Collecte</h4>
+                            <p>J'ai commencé par collecter l'ensemble des statistiques de LeBron James depuis son arrivée en NBA. Chaque match, chaque saison, chaque équipe avec des données précises sur les performances.</p>
+                            <p>Une phase d'analyse préliminaire m'a permis d'identifier les tendances et moments clés de sa carrière à mettre en valeur.</p>
+                            <img class="process-image" src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Analyse préliminaire des données">
+                        </div>
+                        
+                        <div class="process-card">
+                            <h4 class="process-step">02. Design & Wireframing</h4>
+                            <p>J'ai esquissé différentes approches de visualisation pour trouver celle qui raconterait le mieux cette carrière exceptionnelle.</p>
+                            <p>Après plusieurs itérations, j'ai opté pour une interface combinant ligne temporelle, graphiques comparatifs et cartes de chaleur pour représenter différentes facettes des performances.</p>
+                            <img class="process-image" src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Wireframes et prototypes">
+                        </div>
+                        
+                        <div class="process-card">
+                            <h4 class="process-step">03. Développement</h4>
+                            <p>J'ai développé l'interface en vanilla JavaScript avec D3.js pour les visualisations de données. Chaque élément a été conçu pour être réactif et interactif.</p>
+                            <p>Le code a été structuré en modules pour faciliter la maintenance et les ajouts futurs de fonctionnalités.</p>
+                            <img class="process-image" src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Code et développement">
+                        </div>
+                        
+                        <div class="process-card">
+                            <h4 class="process-step">04. Tests & Itérations</h4>
+                            <p>J'ai testé l'interface auprès de fans de basketball et d'analystes de données pour recueillir leurs retours et améliorer l'expérience utilisateur.</p>
+                            <p>Plusieurs ajustements ont été effectués pour optimiser la lisibilité des données et la fluidité des interactions.</p>
+                            <img class="process-image" src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Tests et itérations">
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="project-section">
+                    <h3 class="section-title">Résultat final</h3>
+                    
+                    <div class="results-gallery">
+                        <div class="gallery-item large">
+                            <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Visualisation principale">
+                            <div class="gallery-overlay">
+                                <h4 class="overlay-title">Vue d'ensemble des performances</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Comparaison par saisons">
+                            <div class="gallery-overlay">
+                                <h4 class="overlay-title">Comparaison des saisons</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Statistiques détaillées">
+                            <div class="gallery-overlay">
+                                <h4 class="overlay-title">Statistiques détaillées</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <img src="https://raw.githubusercontent.com/SIGATNguyen/DATA/main/Dataviz_LJ.webp" alt="Version mobile">
+                            <div class="gallery-overlay">
+                                <h4 class="overlay-title">Adaptation mobile</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://sigatnguyen.github.io/privatecarto/" class="btn btn-primary" target="_blank">
+                        Voir la démonstration en ligne
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </section>
+                
+                <section class="project-section">
+                    <h3 class="section-title">Apprentissages</h3>
+                    
+                    <div class="learnings-grid">
+                        <div class="learning-column">
+                            <h4>Ce que j'ai appris</h4>
+                            <ul class="learning-list">
+                                <li class="learning-item">Exploitation optimale de D3.js pour créer des visualisations de données complexes et interactives.</li>
+                                <li class="learning-item">Techniques de storytelling visuel pour guider l'utilisateur à travers une grande quantité de données.</li>
+                                <li class="learning-item">Optimisation des performances pour maintenir une expérience fluide malgré le volume important de données.</li>
+                                <li class="learning-item">Conception d'une interface adaptative qui reste fonctionnelle et lisible sur tous les appareils.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="learning-column">
+                            <h4>Pour une future version</h4>
+                            <ul class="learning-list">
+                                <li class="learning-item">Intégrer une fonction de comparaison avec d'autres joueurs de légende pour contextualiser davantage les performances.</li>
+                                <li class="learning-item">Développer une version avec des animations plus élaborées pour illustrer les transitions entre les différentes phases de carrière.</li>
+                                <li class="learning-item">Ajouter un mode "expert" avec des statistiques avancées pour les analystes et passionnés de données.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="project-navigation">
+                <a href="#project-ouest-france" class="nav-prev">
+                    <span class="nav-label">Projet précédent</span>
+                    <span class="nav-title">Ouest-France Scrollytelling</span>
+                </a>
+                
+                <a href="#projects" class="nav-back">
+                    <span class="nav-back-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span>Tous les projets</span>
+                </a>
+                
+                <a href="#project-gtfs" class="nav-next">
+                    <span class="nav-label">Projet suivant</span>
+                    <span class="nav-title">GTFS Bordeaux</span>
+                </a>
+            </div>
+        </div>
+        
+        <button class="close-project">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- GTFS Bordeaux Project (masqué par défaut) -->
+    <div id="project-gtfs" class="project-detail">
+        <div class="project-detail-container">
+            <!-- Contenu détaillé du projet GTFS Bordeaux -->
+            <!-- Structure similaire au projet LeBron James -->
+        </div>
+        
+        <button class="close-project">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- US Diabetes Project (masqué par défaut) -->
+    <div id="project-diabetes" class="project-detail">
+        <div class="project-detail-container">
+            <!-- Contenu détaillé du projet US Diabetes -->
+            <!-- Structure similaire au projet LeBron James -->
+        </div>
+        
+        <button class="close-project">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Ouest-France Project (masqué par défaut) -->
+    <div id="project-ouest-france" class="project-detail">
+        <div class="project-detail-container">
+            <!-- Contenu détaillé du projet Ouest-France -->
+            <!-- Structure similaire au projet LeBron James -->
+        </div>
+        
+        <button class="close-project">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
